@@ -26,6 +26,6 @@ gradation = int(gradation) if gradation else 5
 
 img = Image.open(image_name)
 res = Image.fromarray(convert_image_to_pixelart(img, mosaic, gradation))
-res.save('res.jpg')
+res.save('results/mine_with_input.jpg')
 
-print("Получившееся изображение сохранено как res.jpg")
+print("Получившееся изображение сохранено как results/mine_with_input.jpg")
