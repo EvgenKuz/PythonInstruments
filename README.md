@@ -46,3 +46,22 @@
 гораздо меньше вызовов. И вызовы в новой версии -
 это преобразования через NumPy, которые быстрее
 циклов в Python.
+
+---
+
+## Docstrings
+
+### Docstring для моего фильтра с указанным именем файла
+
+![](testing/docstring_filter_with_filename.PNG)
+
+Я решил написать тесты в файле с указанным именем, чтобы не
+приходилось вводить его во время теста. Это просто для удобства
+
+### Docstring для функции convert_to_pixelart
+
+![](testing/docstring_convert_image_to_pixelart.PNG)
+
+### Результат исполнения тестов в PyCharm
+
+![](testing/PyCharmResults.PNG)

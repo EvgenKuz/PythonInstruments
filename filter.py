@@ -3,6 +3,15 @@ import numpy as np
 
 
 def convert_image_to_pixelart(image, chunk_size=10, grey_gradation=5):
+    """Пикселезирует изображание и делает его серым.
+    Принимает объект изображение класса Image из
+    библиотеки Pillow,
+    возвращает array из NumPy.
+
+    Проверим, что возвращаемый массив можно преобразовать в
+    изображение.
+    >>> (convert_image_to_pixelart(Image.open("img2.jpg")) < 256).all()
+    True"""
     arr = np.array(image)
     gradient = 255 // grey_gradation
 
